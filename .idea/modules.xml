@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FormacaoPython.iml" filepath="$PROJECT_DIR$/.idea/FormacaoPython.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/integration_with_sqlalchemy.iml" filepath="$PROJECT_DIR$/.idea/integration_with_sqlalchemy.iml" />
     </modules>
   </component>
 </project>
