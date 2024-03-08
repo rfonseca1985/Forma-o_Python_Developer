@@ -1,3 +1,4 @@
+"""
 Este código cria uma API usando o FastAPI, um moderno e rápido (alta performance) framework web para construção de APIs com Python 3.6+ baseado nos padrões para APIs HTTP.
 
 A API tem uma única rota, a rota raiz (“/”), que é acessada através do método GET. Quando um cliente faz uma solicitação GET para a rota raiz, a função read_root é chamada.
@@ -14,7 +15,7 @@ Conecta-se ao ngrok na porta 8000. Imprime o URL público do túnel ngrok. Inici
 Portanto, a funcionalidade principal desta API é ler uma planilha Excel, convertê-la em JSON e retornar o JSON quando a rota raiz é acessada via GET. 
 A API é exposta ao público através do ngrok.
 
-
+"""
 
 from fastapi import FastAPI
 import nest_asyncio
