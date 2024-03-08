@@ -1,12 +1,16 @@
-import pymongo
+"""
+Segundo exemplo com pymongo
+"""
+
 import pprint
+import pymongo
 
 # Credenciais de conexão
-username = "pymongo"
-password = "123456780"
+USERNAME = "pymongo"
+PASSWORD = "123456780"
 
 # Conectar ao banco de dados MongoDB
-client = pymongo.MongoClient(f"mongodb+srv://{username}:{password}@cluster0.wpzznia.mongodb.net/"
+client = pymongo.MongoClient(f"mongodb+srv://{USERNAME}:{PASSWORD}@cluster0.wpzznia.mongodb.net/"
                              "?retryWrites=true&w=majority&appName=Cluster0")
 
 # Selecionar o banco de dados e a coleção
@@ -35,9 +39,11 @@ user_profile_user = [
     {"user_id": 200, "name": "Luke"},
     {"user_id": 201, "name": "Leia"}]
 
-result = db.profiles_user.insert_many(user_profile_user)
+db.profiles_user.insert_many(user_profile_user)
 
 # Imprimir os nomes das coleções no banco de dados
 print(db.list_collection_names())
 for collection in db.list_collection_names():
     print(collection)
+
+db['posts'].drop()

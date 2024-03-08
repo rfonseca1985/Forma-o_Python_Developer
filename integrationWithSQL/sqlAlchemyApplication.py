@@ -121,4 +121,3 @@ stmt_count = select(func.count()).select_from(User)
 # Utilizando session.scalars() para executar a declaração e obter os resultados
 for result in session.scalars(stmt_count):
     print(result)
-

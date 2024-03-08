@@ -1,13 +1,17 @@
-import pymongo
+"""
+Exemplo do como usar MongoDB com pymongo
+"""
+
 from datetime import datetime
 import pprint
+import pymongo
 
 # Credenciais de conexão
-username = "pymongo"
-password = "123456780"
+USERNAME= "pymongo"
+PASSWORD= "123456780"
 
 # Conectar ao banco de dados MongoDB
-client = pymongo.MongoClient(f"mongodb+srv://{username}:{password}@cluster0.wpzznia.mongodb.net/"
+client = pymongo.MongoClient(f"mongodb+srv://{USERNAME}:{PASSWORD}@cluster0.wpzznia.mongodb.net/"
                              "?retryWrites=true&w=majority&appName=Cluster0")
 
 # Selecionar o banco de dados e a coleção
