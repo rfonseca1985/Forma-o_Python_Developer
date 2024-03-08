@@ -24,7 +24,7 @@ import uvicorn
 import pandas as pd
 
 
-ngrok.set_auth_token("2dQHeRLGbGzUfbkADy8JYSYyXbx_3PhY5tMBAmGp2Qq23BFVh")
+ngrok.set_auth_token("<SEU TOKEN AQUI>")
 
 app = FastAPI()
 
